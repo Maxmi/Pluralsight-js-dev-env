@@ -1,4 +1,4 @@
-Notes I took following the Pluralsig course on JavaScript development environment setup.
+Notes I took following the "JavaScript development environment setup" on PluralSight.
 
 1.  Create .editorconfig file in the root of the project.
 2.  Create package.json file (http://bit.ly/jsdevpackagejson)
@@ -29,3 +29,17 @@ Notes I took following the Pluralsig course on JavaScript development environmen
    - add the repo that needs to be watched to your account on Travis,
    - add .travis.yml file to the root
    - commit and push changes to Github. Travis will notify you on the status of changes(if your tests passed or failed);
+
+8. HTTP Calls:
+ - Libraries for making HTTP calls: 
+    - in Node - http,request,  
+    - in Browser - XMLHttpRequest, jQuery, Framework-based, Fetch
+    - in Node&Browser - isomorphic-fetch, xhr, SuperAgent, Axios
+
+It's often helpful to mock HTTP calls (unit tests, web services are not ready yet, services are slow, other testing purposes, etc).  
+How to mock HTTP? - Nock, Static JSON, Create development webserver (api-mock, JSON server(static data), JSON schema faker(dynamic data), Browsersync, Express).
+To use JSON schema: declare the schema, generate random data, serve data via API with JSON server
+- Create mockDataSchema.js file with schema 
+- Create generateMockData.js file 
+- Add npm script to generate mock data
+To get random data every time when we open the app - add "prestart-mockapi" npm script, then add "start-mockapi" to the "npm start" script.
