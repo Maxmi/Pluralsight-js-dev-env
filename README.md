@@ -43,3 +43,9 @@ To use JSON schema: declare the schema, generate random data, serve data via API
 - Create generateMockData.js file 
 - Add npm script to generate mock data
 To get random data every time when we open the app - add "prestart-mockapi" npm script, then add "start-mockapi" to the "npm start" script.
+
+9. Production Build
+  - minification
+
+10. Production Deploy
+
