@@ -25,3 +25,7 @@ Notes I took following the Pluralsig course on JavaScript development environmen
 7. Testing and CI:
  - tests can be located next to source file, not necessarily in separate 'test' folder
  - unit tests can be configured (in pkg.json) to run every time src files are saved
+ - to setup Travis CI:
+   - add the repo that needs to be watched to your account on Travis,
+   - add .travis.yml file to the root
+   - commit and push changes to Github. Travis will notify you on the status of changes(if your tests passed or failed);
